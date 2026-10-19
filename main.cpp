@@ -5,7 +5,7 @@
 using namespace std;
 
 int main() {
-    cout << "TEST WĘZŁÓW I FABRYKI\n";
+    cout << "TEST WEZLOW I FABRYKI\n";
 
     Node* firstNode = NodeFactory::createNode(10);
     Node* secondNode = NodeFactory::createNode(20);
@@ -13,9 +13,9 @@ int main() {
     firstNode->next = secondNode;
     secondNode->prev = firstNode;
 
-    cout << "Pierwszy węzeł wartość: " << firstNode->data << "\n";
-    cout << "Drugi węzeł (przez next) wartość: " << firstNode->next->data << "\n";
-    cout << "Drugi węzeł poprzedni (przez prev) wartość: " << secondNode->prev->data << "\n";
+    cout << "Pierwszy wezel wartosc: " << firstNode->data << "\n";
+    cout << "Drugi wezel (przez next) wartosc: " << firstNode->next->data << "\n";
+    cout << "Drugi wezel poprzedni (przez prev) wartosc: " << secondNode->prev->data << "\n";
 
     delete firstNode;
     delete secondNode;
