@@ -4,13 +4,10 @@
 class Node {
 public:
     int data;
+    Node* prev;
     Node* next;
 
-    Node(int value) : data(value), next(nullptr) {}
+    Node(int val);
 };
-
-Node* createNode(int value) {
-    return new Node(value);
-}
 
 #endif
